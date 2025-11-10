@@ -5,7 +5,7 @@ class heroiAventura{
         this.tipo = tipo
     }
     atacar(){
-        if(this.tipo === "Mago"){
+        if(this.tipo === "mago"){
           return "usando magia";
         }else if(this.tipo === "guerreiro"){
           return "usando espada";
@@ -24,3 +24,4 @@ const tipoHeroi = gets();
 let heroiPersonalizado = new heroiAventura(nomeHeroi, idadeHeroi, tipoHeroi);
 
 console.log(`o ${heroiPersonalizado.tipo} atacou ${heroiPersonalizado.atacar()}`);
+
